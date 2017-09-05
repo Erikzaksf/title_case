@@ -1,5 +1,9 @@
 class String
   def title_case()
-    self.capitalize!()
+    split_sentence = self.split
+    split_sentence.each do |word|
+      word.capitalize!()
+    end
+    split_sentence.join(" ")
   end
-end 
+end
